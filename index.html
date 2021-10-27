@@ -2,23 +2,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0" />
     <title>Sandesign</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
     <div class="main">
+      <h1>Introduction</h1>
+      <h2>Process and Time Scale</h2>
       <div class="columns">
-        <h1>Process and Time Scale</h1>
-        <div>
+        <div class="column">
           <h2>Phase 1 - Design Interview</h2>
           <p>
           The first order of business is to sit down with your team and create a detailed set of design and technical specifications. These
             specifications serve as a roadmap for the rest of the web design process.
           </p>
         </div>
-        <div>
+        <div class="column">
         <h2>Phase 2 - Mockup Presentation</h2>
         <p>
           2 new mockup will be designed, each mockup will have 5 essential page, this mockup are your first chance to visualize your website. While
@@ -26,7 +27,7 @@
           you will be able to pick one of the mockup and request revisions.
         </p>
       </div>
-      <div>
+      <div class="column">
         <h2>Phase 3 - Prototype Showcase</h2>
         <p>
           Once the mockup is agreed on, we'll then turn the mockup into interactive prototype that will allow you click through the website and
@@ -41,17 +42,64 @@
       request changes. In order for this process to work well we ask you to please be considerate of the following guidelines regarding the
       revision process.
       <ul>
-        <li>You can submit up to 3 revision rounds for your website<br>
+        <li><span class='highlight'>You can submit up to 3 revision rounds for your website</span><br>
           Please take the time to carefully review the website designs and make your revision requests as thorough as possible. Additional revision rounds charged at IDR 1.000.000 per round.</li>
-        <li>Please submit each round of revision to us in a single email<br>
+        <li><span class="highlight">Please submit each round of revision to us in a single email</span><br>
           It doesn’t work effectively for us to receive multiple emails with small revision in each one. Please compile all your thoughts and requests for the revision in one email. And please attach any relevant images or documents to the email.</li>
-        <li>Revision scope<br>
+        <li><span class="highlight">Revision scope</span><br>
           You may request changes object position, fonts and colour.</li>
-        <li>Out of scope requests<br>
+        <li><span class="highlight">Out of scope requests</span><br>
           If you require additional web mockup that are not part of your scoped and quoted website package we maybe able to add these at an additional charge IDR 3.000.000.</li>
       </ul>
     </p>
     </div>
+    <section class='pricing'>
+      <h2>Pricing</h2>
+      <div class='produk-kontainer'>
+        <div class='kotak-produk'>
+                <div class="kotak-nama-produk">
+            <span class="nama-produk">Website Design</span>
+            <span class='penjelasan-produk'>Design and development of your new website</span>
+          </div>
+          <div class="kotak-harga-produk">
+            <span id='harga1'>IDR 6.000.000</span>
+          </div>
+        </div>
+
+        <div class='kotak-produk'>
+                    <div class="kotak-nama-produk">
+            <span class="nama-produk">Website Development</span>
+            <span class='penjelasan-produk'>Design and development of your new website</span>
+          </div>
+          <div class="kotak-harga-produk">
+            <span id='harga2'>IDR 8.000.000</span>
+          </div>
+        </div>
+        
+        <div class='kotak-produk'>
+                   <div class="kotak-nama-produk">
+            <span class="nama-produk">Domain & Hosting Service</span>
+            <span class='penjelasan-produk'>Design and development of your new website</span>
+          </div>
+          <div class="kotak-harga-produk">
+            <span id='harga3'>IDR 2.000.000 / Year</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="total-harga-kontainer">
+        <div class='total-DP'>Total<br>Down Payment</div>
+        <div class="kotak-total-harga">
+          <div id='total'>
+            IDR 
+          </div>
+          <div id='DP'>
+            IDR 
+          </div>
+        </div>
+      </div>
+    </section>
     </div>
+    <script src="script/script.js"></script>
   </body>
 </html>

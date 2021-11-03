@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'eina01-bold';
-  src: url(../font/eina01-bold-webfont.woff2) format('woff2'), url(../font/eina01-bold-webfont.woff) format('woff');
+  font-family: 'eina01-semibold';
+  src: url(../font/eina01-semibold-webfont.woff2) format('woff2'), url(../font/eina01-semibold-webfont.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -49,16 +49,22 @@ h3 {
   gap: 2rem;
 }
 
-.column {
+.column,
+.revision {
   align-items: center;
   min-width: 15rem;
-  min-height: 20rem;
-  transition: all 0.3s;
   background-color: white;
   border-radius: 1rem;
   padding: 2rem;
 }
 
+.revision {
+  min-width: 65rem;
+}
+
+.revisions {
+  background-color: #f5df4d;
+}
 /* Harga Produk */
 .pricing {
   font-size: 1rem;

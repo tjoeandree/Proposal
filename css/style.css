@@ -19,6 +19,7 @@ body {
   line-height: 1.7rem;
   width: 100%;
   background-color: #f5df4d;
+  transition: all 3s;
 }
 
 li {
@@ -43,6 +44,11 @@ h3 {
   gap: 2rem;
   align-items: center;
 }
+
+.bg-change {
+  background-color: aquamarine;
+}
+
 .process {
   display: grid;
   grid-auto-flow: column;
@@ -53,6 +59,7 @@ h3 {
 .revision {
   align-items: center;
   min-width: 15rem;
+  min-height: 65vh;
   background-color: white;
   border-radius: 1rem;
   padding: 2rem;

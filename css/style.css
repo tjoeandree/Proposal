@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'eina01-semibold';
-  src: url(../font/eina01-semibold-webfont.woff2) format('woff2'), url(../font/eina01-semibold-webfont.woff) format('woff');
+  font-family: 'eina01-bold';
+  src: url(../font/eina01-bold-webfont.woff2) format('woff2'), url(../font/eina01-bold-webfont.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -19,11 +19,7 @@ body {
   line-height: 1.7rem;
   width: 100%;
   background-color: #f5df4d;
-  transition: all 3s;
-}
-
-li {
-  margin-top: 1rem;
+  transition: all 1s;
 }
 
 h1,
@@ -33,9 +29,6 @@ h3 {
   letter-spacing: 1px;
 }
 
-.highlight {
-  font-weight: bold;
-}
 .main {
   display: grid;
   width: 100%;
@@ -49,61 +42,24 @@ h3 {
   background-color: aquamarine;
 }
 
-.process {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 2rem;
-}
-
-.column,
-.revision {
-  align-items: center;
+.column {
   min-width: 15rem;
   min-height: 65vh;
-  background-color: white;
   border-radius: 1rem;
   padding: 2rem;
+  background-color: white;
 }
-
-.revision {
-  min-width: 65rem;
-}
-
+/* Revisi */
 .revisions {
-  background-color: #f5df4d;
+  background-color: transparent;
 }
 /* Harga Produk */
-.pricing {
-  font-size: 1rem;
-}
 
-.produk-kontainer,
-.total-harga-kontainer {
-  background-color: white;
-  padding: 1rem;
-  border-radius: 1rem;
-  margin-bottom: 2rem;
-}
 .kotak-produk {
-  padding: 1rem;
-  display: grid;
-  grid-template-columns: 60% 40%;
+  margin-top: 1rem;
 }
-.total-harga-kontainer {
-  display: grid;
-  padding: 1rem;
-  grid-auto-flow: column;
-  grid-template-columns: 50% 50%;
-  text-align: right;
-}
-.kotak-nama-produk {
-}
-.kotak-harga-produk {
-  font-weight: bold;
-  text-align: right;
-}
-
 .nama-produk {
+  font-family: 'eina01-bold';
   font-weight: bold;
 }
 .nama-produk,
@@ -113,6 +69,21 @@ h3 {
 
 .penjelasan-produk {
   color: grey;
+}
+.kotak-harga-produk {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.pricing {
+  display: grid;
+}
+
+.total-harga-kontainer {
+  display: grid;
+  grid-auto-flow: column;
+  text-align: right;
+  align-items: end;
 }
 
 #total,
@@ -126,20 +97,13 @@ h3 {
   color: #666;
   text-align: left;
 }
-.total-DP,
-.kotak-total-harga {
-  padding: 1rem;
-}
 
 /* Setelan Resposif */
 
 /*Dekstop*/
 @media (min-width: 801px) {
   .total-harga-kontainer {
-    grid-template-columns: 70% 30%;
-  }
-  .total-DP {
-    text-align: right;
+    grid-template-columns: auto;
   }
 }
 

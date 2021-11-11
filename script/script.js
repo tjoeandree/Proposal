@@ -1,5 +1,5 @@
 function bgChange() {
-  if (window.scrollX > window.innerWidth / 2) {
+  if (window.scrollX > window.innerWidth / 1.5) {
     document.body.classList.add('bg-change');
   } else {
     document.body.classList.remove('bg-change');

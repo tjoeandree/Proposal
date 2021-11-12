@@ -15,7 +15,7 @@
 body {
   font-size: 17px;
   font-family: 'eina01-regular', Helvetica, sans-serif;
-  color: #221e41;
+  color: #10162f;
   line-height: 1.7rem;
   width: 100%;
   background-color: #f5df4d;
@@ -41,15 +41,23 @@ h3 {
 }
 
 .bg-change {
-  background-color: blanchedalmond;
+  background-color: #fff0e5;
 }
 
 .column {
   min-width: 15rem;
   min-height: 60vh;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   padding: 2rem;
   background-color: white;
+  box-shadow: 0;
+  transition: all 0.3s;
+  border: solid black 1px;
+}
+
+.column:hover {
+  transform: translate(5px, -5px);
+  box-shadow: -7px 7px #10162f;
 }
 /* Revisi */
 .revisions {

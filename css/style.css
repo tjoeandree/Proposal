@@ -20,6 +20,7 @@ body {
   width: 100%;
   background-color: #f5df4d;
   transition: all 1s;
+  overflow-x: hidden;
 }
 
 h1,
